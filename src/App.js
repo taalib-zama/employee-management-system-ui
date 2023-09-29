@@ -1,24 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import AddEmployee from './components/AddEmployee';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    //adding two component in a single return .
+    //return error : adjacent jsx elements must be wrapped in an enclosing tag, so return can only have one parent
+    //using <> we wrapped in an enclosing tag in the fragment of react.
+    <>    
+    <NavBar/>
+    <AddEmployee/>
+    </>
+    
   );
 }
 
